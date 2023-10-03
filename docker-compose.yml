@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgresql:
+    container_name: dicoding-path-be-expert
+    restart: always
+    image: postgresql:12-alpine3.18
+    networks:
+      - dicoding-path-be
+    volumes:
+      - ${PGBASEDIR}/data:/var/lib/postgresql/data
+      - ${PGBASEDIR}/initdb:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=${PGUSER}
+      - POSTGRES_PASSWORD=${PGPASSWORD}
+    ports:
+      - ${PGPORT}:5432
+networks:
+  dicoding-path-be:
+    name: dicoding-path-be
+    driver: bridge
