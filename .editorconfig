@@ -1,0 +1,6 @@
+[**.{js, json, yaml}]
+charset = utf-8
+
+[**.{js, json, yaml}]
+indent_style = space
+indent_size = 2
