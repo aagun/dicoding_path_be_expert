@@ -3,7 +3,7 @@ services:
   postgresql:
     container_name: dicoding-path-be-expert
     restart: always
-    image: postgresql:12-alpine3.18
+    image: postgres:12-alpine3.18
     networks:
       - dicoding-path-be
     volumes:

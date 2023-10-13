@@ -10,3 +10,6 @@ docker-volumes/**
 !docker-volumes/postgresql/
 !docker-volumes/postgresql/initdb
 !docker-volumes/postgresql/initdb/**
+
+# test
+coverage

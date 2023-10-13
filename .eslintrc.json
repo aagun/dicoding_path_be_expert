@@ -5,9 +5,13 @@
     "es2021": true,
     "jest": true
   },
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "rules": {}
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off"
+  }
 }
