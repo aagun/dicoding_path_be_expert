@@ -6,6 +6,7 @@
     "jest": true
   },
   "extends": ["airbnb-base", "prettier"],
+  "plugins": ["import"],
   "parserOptions": {
     "ecmaVersion": "latest"
   },

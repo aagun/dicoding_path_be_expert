@@ -1,6 +1,6 @@
 {
   "user": "developer",
-  "password": "postgres",
+  "password": "developer",
   "host": "localhost",
   "port": 5432,
   "database": "authapi_test"
