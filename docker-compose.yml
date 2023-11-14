@@ -16,5 +16,4 @@ services:
       - ${PGPORT}:5432
 networks:
   dicoding-path-be:
-    name: dicoding-path-be
     driver: bridge
