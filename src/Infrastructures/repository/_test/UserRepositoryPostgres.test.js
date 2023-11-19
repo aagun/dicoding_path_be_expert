@@ -84,7 +84,7 @@ describe('UserRepositoryPostgres', () => {
     it('should throw an InvariantError when user not found', async () => {
       const userRepositoryPostgres = new UserRepositoryPostgres(pool, {});
 
-      expect(userRepositoryPostgres.getPasswordByUsername('dicoding'))
+      await expect(userRepositoryPostgres.getPasswordByUsername('dicoding'))
         .rejects.toThrowError(InvariantError);
     });
 
